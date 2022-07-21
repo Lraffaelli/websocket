@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Planisferio",
+    "price": 120.32,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-48.png",
+    "id": 1
+  },
+  {
+    "title": "microscopio",
+    "price": 223.5,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/microscope-lab-science-school-48.png",
+    "id": 2
+  },
+  {
+    "title": "Recipiente Laboratorio",
+    "price": 223.5,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/tube-lab-science-school-48.png",
+    "id": 3
+  },
+  {
+    "title": "Calculadora",
+    "price": 423.5,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-48.png",
+    "id": 4
+  },
+  {
+    "title": "Reloj",
+    "price": 53.5,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/clock-stopwatch-timer-time-48.png",
+    "id": 5
+  },
+  {
+    "title": "Mochila",
+    "price": "346",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/bag-pack-container-school-48.png",
+    "id": 6
+  },
+  {
+    "title": "Lapiz",
+    "price": 223.5,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/pencil-pen-stationery-school-48.png",
+    "id": 7
+  },
+  {
+    "title": "Escuadra",
+    "price": "217",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-48.png",
+    "id": 8
+  },
+  {
+    "title": "Pizarron",
+    "price": "274",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/board-math-class-school-48.png",
+    "id": 9
+  }
+]

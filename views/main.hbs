@@ -1,0 +1,33 @@
+<div class="container-fluid mt-5">
+      <div class="row d-flex justify-content-center ">
+        <div class="col-md-4 bg-secondary p-3">
+          <form action="/productos" method="POST">
+            <h2 class="text-center text-light">Agregar Producto</h2>
+            <label for="nombre" class="form-label text-light">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre del producto" name="title"/>
+
+            <label for="precio" class="form-label text-light">Precio:</label>
+            <input type="text" class="form-control" id="precio" placeholder="precio del producto" name="price"/>
+
+            <label for="thumbnail" class="form-label text-light">Imagen:</label>
+            <input type="text" class="form-control" id="thumbnail" placeholder="Imagen del producto" name="thumbnail"/>
+            <button  class="btn btn-success mt-3">Enviar</button>
+          </form>
+        </div>        
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chatModal">
+        Ver Chat
+      </button>
+    </div>
+
+<div class="container d-flex flex-column justify-content-center align-items-center">
+    <div class="card mt-5 col-md-6">
+        <h2 class="text-center">Lista de Producros</h2>
+        {{> listaProductos}}
+    </div>
+
+</div>
+
+{{> chatModal}}
+
+
