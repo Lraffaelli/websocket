@@ -52,5 +52,11 @@
     "price": "274",
     "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/board-math-class-school-48.png",
     "id": 9
+  },
+  {
+    "title": "casa Roja",
+    "price": "318",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/bag-pack-container-school-48.png",
+    "id": 10
   }
 ]

@@ -5,21 +5,23 @@
         <h5 class="modal-title" id="exampleModalLabel">Centro de Mensajes</h5>        
       </div>
       <div class="modal-body">
-        
+        <div id="mensajes">
+
+        </div>
       </div>
       <div class="modal-footer ">
-        <div class="d-flex flex-column">
+        <form class="form-control d-flex flex-column" onsubmit="return addMensaje()">
         <div class="input-group mb-3 ">
             <span class="input-group-text" id="basic-addon1">Username</span>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" id="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
         </div>
         <div class="input-group mb-3 ">
             <span class="input-group-text">Tu mensaje</span>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
+            <textarea class="form-control" id="mensaje" aria-label="With textarea"></textarea>
         </div>
-        </div>
+        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        </form>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar chat</button>
-        <button type="button" class="btn btn-primary">Enviar Mensaje</button>
       </div>
     </div>
   </div>

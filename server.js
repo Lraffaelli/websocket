@@ -1,12 +1,14 @@
 const express = require("express");
+const {Server:HttpServer} = require("http");
+const {Server:IOServer} = require("socket.io");
 const app = express();
-const server = require("http").Server(app);
-const io = require("socket.io")(server);
+const httpServer = new HttpServer(app)
+const io = new IOServer(httpServer)
 
 const handlebars = require("express-handlebars");
 const fs = require("fs");
 
-let mensaje = [];
+
 
 app.engine(
   "hbs",
@@ -46,21 +48,24 @@ app.post("/productos", async (req, res) => {
   res.render("main", { productos });
 });
 
-io.on("connection", (socket) => {
-  console.log("Nuevo cliente conectado");
-  socket.emit("mensaje", mensaje);
+let allMensajes = [];
 
-  socket.on('new-message', data =>{
-    mensaje.push(data)
-    io.socket.emit('mensaje', mensaje)
+io.on("connection", socket => {
+  console.log('Nuevo cliente conectado');
+  io.sockets.emit('mensajes', allMensajes);
+  
+
+  socket.on('mensaje', data =>{
+    mensajes.push(data)    
+    io.sockets.emit('mensajes', allMensajes)
   })
 
 
+  console.log(mensajes)
 });
-
 const PORT = process.env.PORT || 8080;
 
-const srv = server.listen(PORT, () => {
+const srv = httpServer.listen(PORT, () => {
   console.log(
     `Servidor Http con Websockets escuchando en el puerto ${srv.address().port}`
   );
